@@ -1,0 +1,444 @@
+$date
+	Tue Jul 14 07:31:00 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module processor_frontend_tb $end
+$var wire 3 ! write_reg [2:0] $end
+$var wire 1 " write_enable $end
+$var wire 1 # sel_operand1 $end
+$var wire 1 $ sel_2s_comp $end
+$var wire 8 % regout2 [7:0] $end
+$var wire 8 & regout1 [7:0] $end
+$var wire 3 ' read_reg2 [2:0] $end
+$var wire 3 ( read_reg1 [2:0] $end
+$var wire 8 ) pc [7:0] $end
+$var wire 8 * operand2 [7:0] $end
+$var wire 8 + operand1 [7:0] $end
+$var wire 16 , inst [15:0] $end
+$var wire 8 - immediate [7:0] $end
+$var wire 3 . alu_op [2:0] $end
+$var reg 8 / alu_result [7:0] $end
+$var reg 1 0 clk $end
+$var reg 1 1 rst $end
+$scope module uut $end
+$var wire 8 2 alu_result [7:0] $end
+$var wire 1 0 clk $end
+$var wire 1 1 rst $end
+$var wire 3 3 write_reg [2:0] $end
+$var wire 1 " write_enable $end
+$var wire 1 # sel_operand1 $end
+$var wire 1 $ sel_2s_comp $end
+$var wire 8 4 regout2_2s_comp [7:0] $end
+$var wire 8 5 regout2 [7:0] $end
+$var wire 8 6 regout1 [7:0] $end
+$var wire 8 7 register_write_data [7:0] $end
+$var wire 3 8 read_reg2 [2:0] $end
+$var wire 3 9 read_reg1 [2:0] $end
+$var wire 8 : pc [7:0] $end
+$var wire 8 ; operand2 [7:0] $end
+$var wire 8 < operand1 [7:0] $end
+$var wire 16 = inst [15:0] $end
+$var wire 8 > immediate [7:0] $end
+$var wire 3 ? alu_op [2:0] $end
+$var parameter 4 @ OP_LDI $end
+$scope module cu $end
+$var wire 1 0 clk $end
+$var wire 1 1 rst $end
+$var wire 16 A inst [15:0] $end
+$var parameter 4 B OP_ADD $end
+$var parameter 4 C OP_AND $end
+$var parameter 4 D OP_CMP $end
+$var parameter 4 E OP_DEC $end
+$var parameter 4 F OP_INC $end
+$var parameter 4 G OP_LDI $end
+$var parameter 4 H OP_NOP $end
+$var parameter 4 I OP_OR $end
+$var parameter 4 J OP_SUB $end
+$var parameter 4 K OP_XOR $end
+$var reg 3 L alu_op [2:0] $end
+$var reg 8 M immediate [7:0] $end
+$var reg 8 N pc [7:0] $end
+$var reg 3 O read_reg1 [2:0] $end
+$var reg 3 P read_reg2 [2:0] $end
+$var reg 1 $ sel_2s_comp $end
+$var reg 1 # sel_operand1 $end
+$var reg 1 " write_enable $end
+$var reg 3 Q write_reg [2:0] $end
+$upscope $end
+$scope module imem $end
+$var wire 16 R inst [15:0] $end
+$var wire 8 S pc [7:0] $end
+$var parameter 4 T OP_ADD $end
+$var parameter 4 U OP_AND $end
+$var parameter 4 V OP_CMP $end
+$var parameter 4 W OP_DEC $end
+$var parameter 4 X OP_INC $end
+$var parameter 4 Y OP_LDI $end
+$var parameter 4 Z OP_NOP $end
+$var parameter 4 [ OP_OR $end
+$var parameter 4 \ OP_SUB $end
+$var parameter 4 ] OP_XOR $end
+$var integer 32 ^ i [31:0] $end
+$upscope $end
+$scope module rf $end
+$var wire 1 0 clk $end
+$var wire 3 _ read_reg1 [2:0] $end
+$var wire 3 ` read_reg2 [2:0] $end
+$var wire 8 a regout1 [7:0] $end
+$var wire 8 b regout2 [7:0] $end
+$var wire 1 1 rst $end
+$var wire 8 c write_data [7:0] $end
+$var wire 1 " write_enable $end
+$var wire 3 d write_reg [2:0] $end
+$var integer 32 e i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 ]
+b1 \
+b11 [
+b1111 Z
+b1000 Y
+b101 X
+b110 W
+b111 V
+b10 U
+b0 T
+b100 K
+b1 J
+b11 I
+b1111 H
+b1000 G
+b101 F
+b110 E
+b111 D
+b10 C
+b0 B
+b1000 @
+$end
+#0
+$dumpvars
+b1000 e
+b1 d
+b101 c
+b0 b
+b0 a
+b0 `
+b0 _
+b100000000 ^
+b0 S
+b1000001000000101 R
+b1 Q
+b0 P
+b0 O
+b0 N
+b101 M
+b0 L
+b1000001000000101 A
+b0 ?
+b101 >
+b1000001000000101 =
+b101 <
+b0 ;
+b0 :
+b0 9
+b0 8
+b101 7
+b0 6
+b0 5
+b0 4
+b1 3
+b101 2
+11
+00
+b101 /
+b0 .
+b101 -
+b1000001000000101 ,
+b101 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+0$
+1#
+1"
+b1 !
+$end
+#5000
+b1000 e
+10
+#10000
+00
+#12000
+01
+#15000
+b11 /
+b11 2
+b11 7
+b11 c
+b11 +
+b11 <
+1#
+1"
+b11 -
+b11 >
+b11 M
+b10 !
+b10 3
+b10 Q
+b10 d
+b1000010000000011 ,
+b1000010000000011 =
+b1000010000000011 A
+b1000010000000011 R
+b1 )
+b1 :
+b1 N
+b1 S
+10
+#20000
+00
+#25000
+b1000 7
+b1000 c
+b1000 /
+b1000 2
+b101 +
+b101 <
+b11 *
+b11 ;
+b11111101 4
+0#
+1"
+b1010000 -
+b1010000 >
+b1010000 M
+b11 !
+b11 3
+b11 Q
+b11 d
+b11 %
+b11 5
+b11 b
+b10 '
+b10 8
+b10 P
+b10 `
+b101 &
+b101 6
+b101 a
+b1 (
+b1 9
+b1 O
+b1 _
+b11001010000 ,
+b11001010000 =
+b11001010000 A
+b11001010000 R
+b10 )
+b10 :
+b10 N
+b10 S
+10
+#30000
+00
+#35000
+b10 7
+b10 c
+b10 /
+b10 2
+b11111101 *
+b11111101 ;
+1$
+b1 .
+b1 ?
+b1 L
+1"
+b100 !
+b100 3
+b100 Q
+b100 d
+b1100001010000 ,
+b1100001010000 =
+b1100001010000 A
+b1100001010000 R
+b11 )
+b11 :
+b11 N
+b11 S
+10
+#40000
+00
+#45000
+b1 7
+b1 c
+b1 /
+b1 2
+b11 *
+b11 ;
+b10 .
+b10 ?
+b10 L
+0$
+1"
+b101 !
+b101 3
+b101 Q
+b101 d
+b10101001010000 ,
+b10101001010000 =
+b10101001010000 A
+b10101001010000 R
+b100 )
+b100 :
+b100 N
+b100 S
+10
+#50000
+00
+#55000
+b111 7
+b111 c
+b111 /
+b111 2
+b11 .
+b11 ?
+b11 L
+1"
+b110 !
+b110 3
+b110 Q
+b110 d
+b11110001010000 ,
+b11110001010000 =
+b11110001010000 A
+b11110001010000 R
+b101 )
+b101 :
+b101 N
+b101 S
+10
+#60000
+00
+#65000
+b110 7
+b110 c
+b110 /
+b110 2
+b100 .
+b100 ?
+b100 L
+1"
+b111 !
+b111 3
+b111 Q
+b111 d
+b100111001010000 ,
+b100111001010000 =
+b100111001010000 A
+b100111001010000 R
+b110 )
+b110 :
+b110 N
+b110 S
+10
+#70000
+00
+#75000
+b0 7
+b0 c
+b0 /
+b0 2
+b0 *
+b0 ;
+b0 4
+b0 +
+b0 <
+b0 .
+b0 ?
+b0 L
+0"
+b0 -
+b0 >
+b0 M
+b0 !
+b0 3
+b0 Q
+b0 d
+b0 %
+b0 5
+b0 b
+b0 '
+b0 8
+b0 P
+b0 `
+b0 &
+b0 6
+b0 a
+b0 (
+b0 9
+b0 O
+b0 _
+b1111000000000000 ,
+b1111000000000000 =
+b1111000000000000 A
+b1111000000000000 R
+b111 )
+b111 :
+b111 N
+b111 S
+10
+#80000
+00
+#85000
+b1000 )
+b1000 :
+b1000 N
+b1000 S
+10
+#90000
+00
+#95000
+b1001 )
+b1001 :
+b1001 N
+b1001 S
+10
+#100000
+00
+#105000
+b1010 )
+b1010 :
+b1010 N
+b1010 S
+10
+#110000
+00
+#115000
+b1011 )
+b1011 :
+b1011 N
+b1011 S
+10
+#120000
+00
+#125000
+b1100 )
+b1100 :
+b1100 N
+b1100 S
+10
+#130000
+00
+#132000
