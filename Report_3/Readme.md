@@ -6,6 +6,16 @@
 
 ---
 
+| Details | Information |
+|---|---|
+| **Student Name** | Neev Badu |
+| **Roll Number** | THA079BEI015 |
+| **Assignment** | Assignment 2 – Implement 8-Bit ALU in Verilog |
+| **Tools Used** | Icarus Verilog and GTKWave |
+| **Design Type** | Combinational Logic Circuit |
+
+---
+
 ## Objective
 
 The objective of this assignment is to implement the basic frontend part of an 8-bit processor using Verilog HDL.
