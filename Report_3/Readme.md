@@ -11,7 +11,6 @@
 | **Student Name** | Neev Badu |
 | **Roll Number** | THA079BEI015 |
 | **Tools Used** | Icarus Verilog and GTKWave |
-| **Design Type** | Combinational Logic Circuit |
 
 ---
 
