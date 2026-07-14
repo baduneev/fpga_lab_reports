@@ -49,21 +49,7 @@ ALU Result
 Write Back to Register File
 ```
 
-In simple words:
-
-The **Program Counter** selects an instruction from instruction memory.  
-The **Control Unit** decodes the instruction and generates required control signals.  
-The **Register File** reads operands and stores results.  
-The **ALU result** is written back to the selected register.
-
-Nepali explanation:
-
-```text
-PC ले instruction memory बाट instruction ल्याउँछ।
-Control Unit ले instruction decode गर्छ।
-Register File बाट data read हुन्छ।
-ALU operation पछि result फेरि register मा write हुन्छ।
-```
+In simple words, the **Program Counter** selects an instruction from instruction memory. The **Control Unit** decodes the instruction and generates the required control signals. The **Register File** reads operands and stores results. The **ALU result** is written back to the selected register.
 
 ---
 
@@ -147,15 +133,6 @@ module control_unit(
 - Selects ALU operation
 - Controls immediate data usage
 - Controls 2's complement selection for subtraction
-
-Nepali explanation:
-
-```text
-Control Unit processor को brain जस्तै हो।
-यसले instruction हेरेर कुन register read गर्ने,
-कुन register write गर्ने, ALU लाई कुन operation गराउने
-भन्ने control signal दिन्छ।
-```
 
 ---
 
@@ -352,8 +329,6 @@ PC = 6: XOR R7, R1, R2
 
 ## Tools Used
 
-The following tools were used in this assignment:
-
 | Tool | Purpose |
 |---|---|
 | Icarus Verilog | To compile Verilog code |
@@ -419,6 +394,16 @@ alu_result
 
 ---
 
+## Waveform Output Screenshot
+
+The GTKWave output screenshot is shown below:
+
+![GTKWave Simulation Output](./output.png.png)
+
+> Note: The image file `output.png.png` must be in the same folder as this `README.md` file for the image to display properly.
+
+---
+
 ## Waveform Explanation
 
 From the waveform:
@@ -433,16 +418,6 @@ From the waveform:
 - Operand selection logic generates `operand1` and `operand2`.
 - ALU result is calculated.
 - The result is written back to the selected register when `write_enable = 1`.
-
-Nepali explanation:
-
-```text
-Waveform मा PC क्रमशः 0, 1, 2, 3 ... बढेको देखिन्छ।
-हरेक PC मा नयाँ instruction fetch हुन्छ।
-Control Unit ले instruction decode गर्छ।
-Register File बाट data read हुन्छ।
-ALU result register मा write back हुन्छ।
-```
 
 ---
 
@@ -517,33 +492,6 @@ Result      = R7 = 6
 
 ---
 
-## Output Screenshot
-
-The GTKWave waveform output screenshot is included in the project folder as:
-
-```text
-output.png.png
-```
-
-This screenshot shows the waveform of important signals such as:
-
-- `clk`
-- `rst`
-- `pc`
-- `inst`
-- `write_enable`
-- `write_reg`
-- `read_reg1`
-- `read_reg2`
-- `alu_op`
-- `regout1`
-- `regout2`
-- `operand1`
-- `operand2`
-- `alu_result`
-
----
-
 ## Result
 
 The simulation output verifies that the processor frontend works correctly.
@@ -566,14 +514,6 @@ Successfully verified operations:
 In this assignment, the frontend of an 8-bit processor was designed and simulated using Verilog HDL.
 
 The implemented system includes instruction memory, control unit, program counter, and 8x8 register file. The waveform confirms that instructions are fetched sequentially, decoded properly, and the results are written back to the register file.
-
-Nepali conclusion:
-
-```text
-यो assignment बाट 8-bit processor को basic frontend कसरी काम गर्छ भन्ने कुरा बुझियो।
-PC ले instruction fetch गर्छ, Control Unit ले decode गर्छ,
-Register File ले data read/write गर्छ, र result फेरि register मा store हुन्छ।
-```
 
 ---
 
