@@ -10,7 +10,6 @@
 |---|---|
 | **Student Name** | Neev Badu |
 | **Roll Number** | THA079BEI015 |
-| **Assignment** | Assignment 2 – Implement 8-Bit ALU in Verilog |
 | **Tools Used** | Icarus Verilog and GTKWave |
 | **Design Type** | Combinational Logic Circuit |
 
