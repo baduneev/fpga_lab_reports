@@ -406,9 +406,9 @@ alu_result
 
 The GTKWave output screenshot is shown below:
 
-![GTKWave Simulation Output](./output.png.png)
+![GTKWave Simulation Output](./output.png)
 
-> Note: The image file `output.png.png` must be in the same folder as this `README.md` file for the image to display properly.
+> Note: The image file `output.png` must be in the same folder as this `README.md` file for the image to display properly.
 
 ---
 
